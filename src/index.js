@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './components/App';
+import App from "./components/App";
 
-const rootElement = document.getElementById('root');
+import { items, sellers } from "./data";
 
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById("root");
+
+ReactDOM.render(<App items={items} sellers={sellers} />, rootElement);
